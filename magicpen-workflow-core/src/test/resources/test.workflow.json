@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "if": {
+        "condition": {
+          "type": "BOOLEAN",
+          "value": "true"
+        },
+        "then": [
+          {
+            "action": {
+              "name": "test",
+              "arguments": {
+                "param1": {
+                  "type": "NODE_RESULT",
+                  "value": "1:date"
+                }
+              }
+            },
+            "dependencies": [
+              "1"
+            ]
+          },
+          {
+            "id": 1,
+            "action": {
+              "name": "test",
+              "arguments": {
+                "param1": {
+                  "type": "TEXT",
+                  "value": "Hello"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
